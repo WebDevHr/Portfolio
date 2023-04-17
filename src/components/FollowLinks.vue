@@ -37,4 +37,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+* {
+  font-family: "Kalam", sans-serif;
+}
+</style>

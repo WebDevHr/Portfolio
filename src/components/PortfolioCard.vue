@@ -12,7 +12,7 @@
       </div>
 
       <div class="card-body text-start mt-3">
-        <h5 class="card-title text-black">{{ title }}</h5>
+        <h5 class="card-title text-black titleStyle fw-bolder">{{ title }}</h5>
         <p class="card-text">{{ description }}</p>
       </div>
     </a>
@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card {
   width: 18rem;
   cursor: pointer;

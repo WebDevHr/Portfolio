@@ -28,7 +28,7 @@
           <div
             v-for="(item, index) in navTabs"
             :key="index"
-            class="py-2 px-4 mx-2 my-0 fs-5 rounded item navItems floatNone cursorPointer"
+            class="py-2 px-4 mx-2 my-0 fs-5 rounded item navItems floatNone cursorPointer fs-3"
             @click="goToRelated(item)"
           >
             {{ item }}
@@ -132,8 +132,12 @@ export default {
 </script>
 
 <style scoped>
+@import url("@/assets/fonts.css");
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "DancingScript", sans-serif;
+}
+.fontFamilyDancingScript {
+  font-family: "DancingScript", sans-serif;
 }
 .size-of-logo {
   width: 60px;

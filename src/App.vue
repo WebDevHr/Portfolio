@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavbarComp />
-    <router-view />
+    <router-view :key="$route.fullPath" />
     <FollowLinks />
     <FooterComp />
   </div>
@@ -30,5 +30,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+@import url("@/assets/fonts.css");
+.fontFamilyDancingScript {
+  font-family: "DancingScript", sans-serif;
+}
+.fontFamilyKalam {
+  font-family: "Kalam", sans-serif;
+}
+.fontFamilyCourgette {
+  font-family: "Courgette", sans-serif;
 }
 </style>

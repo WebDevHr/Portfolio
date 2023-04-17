@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Kalam";
+    src: url("@/assets/Kalam-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "DancingScript";
+    src: url("@/assets/DancingScript-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Courgette";
+    src: url("@/assets/Courgette-Regular.ttf") format("truetype");
+  }

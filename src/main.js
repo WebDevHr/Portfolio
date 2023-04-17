@@ -26,6 +26,8 @@ import {
   faEnvelope,
   faGlobe,
   faChevronUp,
+  faPhone,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -46,7 +48,9 @@ library.add(
   faEnvelope,
   faGlobe,
   faLinkedinIn,
-  faChevronUp
+  faChevronUp,
+  faPhone,
+  faLocationDot
 );
 
 /* add font awesome icon component */

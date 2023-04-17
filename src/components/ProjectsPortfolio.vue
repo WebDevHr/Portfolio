@@ -2,9 +2,11 @@
   <div class="container-lg mt-5 my-3 my-lg-0 mt-lg-5">
     <div class="d-flex flex-column">
       <div class="mb-5">
-        <p class="letterSpacing mb-0">What I Did ?</p>
-        <h1 class="fw-bolder mt-0">Projects Portfolio</h1>
-        <h5 class="text-secondary mt-4">
+        <p class="letterSpacing mb-0 fontFamilyDancingScript fw-bold">
+          What I Did ?
+        </p>
+        <h1 class="fw-bolder mt-0 fontFamilyKalam">Projects Portfolio</h1>
+        <h5 class="letterSpacing text-secondary mt-4 fontFamilyKalam">
           Search projects by title or filter by category
         </h5>
       </div>
@@ -144,8 +146,11 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: "Kalam", sans-serif;
+}
 .letterSpacing {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .inputSize {
   width: 200px;
