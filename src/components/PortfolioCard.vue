@@ -1,7 +1,7 @@
 <template>
   <div class="card pr-4 pb-4 shadow cardHover" @click="handleClick">
     <a :href="cardHref" class="text-decoration-none text-secondary">
-      <div class="border rounded backgroundColor">
+      <div class="border-bottom">
         <img
           :src="imageUrl"
           class="p-2"
