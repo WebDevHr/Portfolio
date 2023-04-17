@@ -3,7 +3,7 @@
     <h1 class="text-">Bizim Hikaye</h1>
     <div>
       <div class="fs-1 fontFamilyDancingScript mt-5 me-5">Huseyin</div>
-      <div class="fs-1 love">Loves</div>
+      <div class="fs-2 love text-danger">Loves</div>
       <div class="fs-1 fontFamilyDancingScript mb-5 ms-5">Esma</div>
     </div>
   </div>
