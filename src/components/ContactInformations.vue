@@ -6,7 +6,7 @@
     >
       <a
         class="text-decoration-none color"
-        href="https://www.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA"
+        href="https://www.google.com/maps/place/Gazi+University/@39.9396355,32.819731,17z/data=!3m1!4b1!4m6!3m5!1s0x14d34eda2bd572e3:0xc4944b9ae7b9927!8m2!3d39.9396355!4d32.8223059!16zL20vMDdoNjM4"
         ><font-awesome-icon
           class="me-2"
           :icon="['fas', 'location-dot']"
