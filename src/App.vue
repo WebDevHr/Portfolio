@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavbarComp />
-    <router-view :key="$route.fullPath" />
+    <router-view />
     <FollowLinks />
     <FooterComp />
   </div>
