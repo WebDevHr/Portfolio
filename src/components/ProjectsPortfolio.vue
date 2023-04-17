@@ -1,8 +1,8 @@
 <template>
-  <div class="container-lg mt-5 my-3 my-lg-0">
+  <div class="container-lg mt-5 my-3 my-lg-0 mt-lg-5">
     <div class="d-flex flex-column">
       <div class="mb-5">
-        <p class="letterSpacing">What I Did ?</p>
+        <p class="letterSpacing mb-0">What I Did ?</p>
         <h1 class="fw-bolder mt-0">Projects Portfolio</h1>
         <h5 class="text-secondary mt-4">
           Search projects by title or filter by category
@@ -11,13 +11,16 @@
       <div
         class="d-flex flex-row justify-content-center justify-content-lg-start border-bottom pb-3"
       >
-        <button type="button" class="btn btn-outline-secondary me-1">
+        <button
+          type="button"
+          class="btn btn-outline-secondary me-1 d-none d-lg-inline inputBorder"
+        >
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </button>
         <input
           v-model="searchValue"
           type="text"
-          class="rounded border border-secondary inputWidth"
+          class="rounded inputSize inputBorder"
           id="myInput"
           placeholder="Search projects"
         />
@@ -47,7 +50,11 @@
       />
     </div>
     <div class="pb-5 border-bottom">
-      <button type="button" class="btn btn-outline-secondary btn-lg px-5 my-5">
+      <button
+        type="button"
+        class="btn btn-outline-secondary btn-lg px-5 my-5 shadow"
+        @click="goToProjects"
+      >
         More Projects
       </button>
     </div>
@@ -108,7 +115,6 @@ export default {
           let selected = this.projects.filter(
             (x) => x.category == this.selectedOption
           );
-          console.log(selected);
           return selected;
         } else {
           return this.projects;
@@ -127,6 +133,13 @@ export default {
       }
     },
   },
+  methods: {
+    goToProjects() {
+      if (this.$route.path !== "/projects") {
+        this.$router.push("/projects");
+      }
+    },
+  },
 };
 </script>
 
@@ -134,9 +147,12 @@ export default {
 .letterSpacing {
   letter-spacing: 2px;
 }
-.inputWidth {
+.inputSize {
   width: 200px;
   height: 45px;
+}
+.inputBorder {
+  border: 1px solid rgb(188, 188, 188);
 }
 .selectWidth {
   width: 200px;

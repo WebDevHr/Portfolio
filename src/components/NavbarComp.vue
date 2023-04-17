@@ -5,9 +5,10 @@
     >
       <transition appear>
         <div
-          class="d-flex justify-content-center align-items-center rounded-circle size-of-logo shadow logo cursor-pointer"
+          class="d-flex justify-content-center align-items-center rounded-circle size-of-logo shadow logo cursorPointer"
           @mouseover="logoOver"
           @mouseleave="logoOut"
+          @click="goToHome"
         >
           <img
             src="@/assets/pictures/hrLogo.png"
@@ -27,7 +28,8 @@
           <div
             v-for="(item, index) in navTabs"
             :key="index"
-            class="py-2 px-4 mx-2 my-0 fs-5 rounded item navItems floatNone"
+            class="py-2 px-4 mx-2 my-0 fs-5 rounded item navItems floatNone cursorPointer"
+            @click="goToRelated(item)"
           >
             {{ item }}
           </div>
@@ -114,6 +116,16 @@ export default {
         ease: "Power2.easeOut",
         stagger: 0.1,
       });
+    },
+    goToHome() {
+      this.$router.push({ name: "home" });
+    },
+    goToRelated(item) {
+      let tempRoute = item.toLowerCase().replace(" ", "");
+      let tempPath = "/" + tempRoute;
+      if (this.$route.path != tempPath) {
+        this.$router.push({ name: tempRoute });
+      }
     },
   },
 };
@@ -220,6 +232,9 @@ export default {
     position: relative;
     justify-content: center;
   }
+}
+.cursorPointer {
+  cursor: pointer;
 }
 
 /* .fade-enter-active,

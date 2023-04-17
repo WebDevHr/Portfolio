@@ -1,7 +1,7 @@
 <template>
   <div class="card pr-4 pb-4 shadow cardHover" @click="handleClick">
     <a :href="cardHref" class="text-decoration-none text-secondary">
-      <div class="border rounded bg-secondary">
+      <div class="border rounded backgroundColor">
         <img
           :src="imageUrl"
           class="p-2"
@@ -65,5 +65,8 @@ export default {
 .cardHover:hover {
   box-shadow: 20px 20px #888888;
   scale: 1.1;
+}
+.backgroundColor {
+  background-color: rgb(222, 222, 222);
 }
 </style>

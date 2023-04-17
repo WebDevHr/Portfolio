@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5">
+  <div class="my-5">
     <div>
       <h1 class="fw-bolder mb-5">Follow me</h1>
     </div>
@@ -7,7 +7,8 @@
       <LinkBox
         v-for="(linkIcon, index) in linksIcon"
         :key="index"
-        :icon="linkIcon"
+        :icon="linkIcon.iconL"
+        :href="linkIcon.address"
       />
     </div>
   </div>
@@ -22,11 +23,14 @@ export default {
   data() {
     return {
       linksIcon: [
-        ["fas", "globe"],
-        ["fab", "github"],
-        ["fab", "twitter"],
-        ["fab", "linkedin-in"],
-        ["fas", "envelope"],
+        { iconL: ["fas", "globe"], address: "https://webdevhr.com/" },
+        { iconL: ["fab", "github"], address: "https://github.com/WebDevHr" },
+        { iconL: ["fab", "twitter"], address: "#" },
+        {
+          iconL: ["fab", "linkedin-in"],
+          address: "https://www.linkedin.com/in/hossein-razeghian-958b0824b/",
+        },
+        { iconL: ["fas", "envelope"], address: "mailto:razeqian@gmail.com" },
       ],
     };
   },

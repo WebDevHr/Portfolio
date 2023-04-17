@@ -1,27 +1,22 @@
 <template>
   <div id="app">
     <NavbarComp />
-    <FirstPart />
-    <ProjectsPortfolio />
+    <router-view :key="$route.fullPath" />
     <FollowLinks />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <FooterComp />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import NavbarComp from "./components/NavbarComp.vue";
-import FirstPart from "./components/FirstPart.vue";
-import ProjectsPortfolio from "./components/ProjectsPortfolio.vue";
-import FollowLinks from "./components/FollowLinks.vue";
+import FollowLinks from "@/components/FollowLinks.vue";
+import FooterComp from "./components/FooterComp.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     NavbarComp,
-    FirstPart,
-    ProjectsPortfolio,
+    FooterComp,
     FollowLinks,
   },
 };
