@@ -66,7 +66,7 @@ gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 export default {
   data() {
     return {
-      navTabs: ["Projects", "Skills", "Esma", "Contact"],
+      navTabs: ["Projects", "Skills", "About me", "Contact"],
       isActive: false,
       isClicked: false,
       timeoutId: null,
