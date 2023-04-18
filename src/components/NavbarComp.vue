@@ -1,7 +1,9 @@
 <template>
-  <div class="d-flex flex-row align-items-center">
+  <div
+    class="d-flex flex-row align-items-center flex-wrap flex-lg-nowrap justify-content-between"
+  >
     <div
-      class="col-6 col-lg-3 d-flex justify-content-center align-items-center"
+      class="col-6 col-lg-3 d-flex justify-content-center align-items-center order-1"
     >
       <transition appear>
         <div
@@ -20,21 +22,22 @@
       </transition>
     </div>
 
-    <div class="col-6 col-lg-9 d-flex flex-row menuAndButton">
+    <div
+      class="col-10 col-lg-6 order-3 order-lg-2 mt-lg-0 mt-3 mx-auto mx-lg-0 menu"
+      v-show="isClicked"
+    >
       <div
-        class="d-flex flex-lg-row justify-content-center align-items-center col-9 menu"
+        v-for="(item, index) in navTabs"
+        :key="index"
+        class="py-2 px-3 mx-2 my-0 fs-3 rounded item navItems cursorPointer fw-bold"
+        @click="goToRelated(item)"
       >
-        <transition-group name="fade" appear v-show="isClicked">
-          <div
-            v-for="(item, index) in navTabs"
-            :key="index"
-            class="py-2 px-4 mx-2 my-0 fs-3 rounded item navItems floatNone cursorPointer fw-bold"
-            @click="goToRelated(item)"
-          >
-            {{ item }}
-          </div>
-        </transition-group>
+        {{ item }}
       </div>
+    </div>
+    <div
+      class="col-6 col-lg-3 d-flex flex-row order-2 order-lg-3 justify-content-center"
+    >
       <div
         class="col-3 d-flex justify-content-center align-items-center menuButton"
       >
@@ -79,7 +82,7 @@ export default {
         clearTimeout(this.timeoutId);
         this.isClicked = true;
         gsap.from(".item", {
-          duration: 1,
+          duration: 0.8,
           opacity: 0,
           y: -150,
           ease: "Power2.easeOut",
@@ -90,7 +93,7 @@ export default {
           this.isClicked = false;
         }, 1000);
         gsap.to(".item", {
-          duration: 1,
+          duration: 0.8,
           opacity: 0,
           y: -150,
           ease: "Power2.easeOut",
@@ -102,19 +105,17 @@ export default {
     logoOver() {
       gsap.set(".logo", { scale: 1 });
       gsap.to(".logo", {
-        duration: 1,
+        duration: 0.8,
         scale: 1.25,
         ease: "Power1.easeOut",
-        stagger: 0.1,
       });
     },
     logoOut() {
       gsap.set(".logo", { scale: 1.25 });
       gsap.to(".logo", {
-        duration: 1,
+        duration: 0.8,
         scale: 1,
         ease: "Power2.easeOut",
-        stagger: 0.1,
       });
     },
     goToHome() {
@@ -199,6 +200,7 @@ export default {
 
 .navbar-burger.is-active span:nth-child(2) {
   opacity: 0;
+  width: 0px;
   height: 0px;
 }
 
@@ -227,28 +229,19 @@ export default {
   float: left;
 }
 
-@media screen and (max-width: 992px) {
-  .menu {
-    position: absolute;
-    z-index: 1000;
-    width: 200%;
-    top: 60px;
-    left: -50vw;
-    background-color: white;
-  }
-  .menuButton {
-    justify-content: center;
-  }
-  .floatNone {
-    float: none;
-  }
-  .menuAndButton {
-    position: relative;
-    justify-content: center;
-  }
-}
 .cursorPointer {
   cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: center;
 }
 
 /* .fade-enter-active,
