@@ -3,7 +3,7 @@
     class="my-5 col-lg-5 col-12 d-flex justify-content-center align-items-center"
   >
     <div class="col-12">
-      <form class="border rounded p-4" @submit.prevent="submitForm">
+      <form class="border rounded p-4" @submit.prevent="">
         <div class="mb-3">
           <label
             for="exampleInputEmail1"
@@ -70,7 +70,6 @@
         </div>
         <div class="d-flex justify-content-center ms-1">
           <button
-            type="submit"
             class="btn btn-outline-secondary px-5 fs-5"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
@@ -95,7 +94,7 @@
           <div class="modal-footer d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-danger"
+              class="btn btn-outline-secondary modalCancel"
               data-bs-dismiss="modal"
               style="width: 100px"
             >
@@ -103,9 +102,10 @@
             </button>
             <button
               type="button"
-              class="btn btn-success"
+              class="btn btn-secondary modalSubmit"
               style="width: 100px"
               @click="submitForm"
+              data-bs-dismiss="modal"
             >
               Submit
             </button>
@@ -151,5 +151,17 @@ export default {
 <style scoped>
 * {
   font-family: "Courgette", sans-serif;
+}
+.modalSubmit {
+  transition: background-color 0.5s;
+}
+.modalSubmit:hover {
+  background-color: green;
+}
+.modalCancel {
+  transition: background-color 0.5s;
+}
+.modalCancel:hover {
+  background-color: rgb(197, 0, 0);
 }
 </style>

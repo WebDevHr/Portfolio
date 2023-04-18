@@ -54,7 +54,7 @@
     <div class="pb-5 border-bottom">
       <button
         type="button"
-        class="btn btn-outline-secondary btn-lg px-5 my-5 shadow"
+        class="btn btn-outline-secondary btn-lg px-5 my-5 shadow portfolioButton"
         @click="goToProjects"
       >
         More Projects
@@ -153,14 +153,14 @@ export default {
   letter-spacing: 1px;
 }
 .inputSize {
-  width: 200px;
+  width: 150px;
   height: 45px;
 }
 .inputBorder {
   border: 1px solid rgb(188, 188, 188);
 }
 .selectWidth {
-  width: 200px;
+  width: 150px;
 }
 #myInput {
   padding-top: 5px;
@@ -168,9 +168,14 @@ export default {
   padding-bottom: 5px;
   padding-left: 10px;
 }
+input,
+select {
+  transition: width 1s;
+}
 input:focus,
 select:focus {
   outline: none;
   box-shadow: none;
+  width: 300px;
 }
 </style>

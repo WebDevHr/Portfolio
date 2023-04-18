@@ -1,5 +1,5 @@
 <template>
-  <div class="card pr-4 pb-4 shadow cardHover" @click="handleClick">
+  <div class="card pr-4 pb-4 cardHover" @click="handleClick">
     <a :href="cardHref" class="text-decoration-none text-secondary">
       <div class="border-bottom">
         <img
@@ -20,11 +20,6 @@
 </template>
 
 <script>
-// import { gsap } from "gsap";
-// import { PixiPlugin } from "gsap/PixiPlugin.js";
-// import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
-
-// gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 export default {
   props: {
     imageUrl: String,
@@ -36,23 +31,6 @@ export default {
     handleClick() {
       // handle click event
     },
-    // mouseOver() {
-    //   gsap.fromTo(
-    //     ".gsapCard",
-    //     {
-    //       duration: 1,
-    //       scale: 1,
-    //       boxShadow:
-    //         "0px 0px 0px 0px #0066ff, 0px 0px 0px 0px rgba(0, 153, 255, 1)",
-    //     },
-    //     {
-    //       duration: 1,
-    //       scale: 1.1,
-    //       boxShadow:
-    //         "0px 0px 30px 8px #0066ff, 0px 0px 30px 8px rgba(0, 153, 255, 1)",
-    //     }
-    //   );
-    // },
   },
 };
 </script>
@@ -62,9 +40,13 @@ export default {
   width: 18rem;
   cursor: pointer;
 }
+.cardHover {
+  transition: box-shadow 0.5s, scale 0.5s, border 0.5s;
+}
 .cardHover:hover {
-  box-shadow: 20px 20px #888888;
+  box-shadow: 5px 5px 10px rgba(120, 120, 120, 0.468);
   scale: 1.1;
+  border: 1px solid rgb(71, 71, 71);
 }
 .backgroundColor {
   background-color: rgb(222, 222, 222);
