@@ -152,6 +152,10 @@ export default {
 .letterSpacing {
   letter-spacing: 1px;
 }
+.inputSearchIconSize {
+  height: 45px;
+  width: 45px;
+}
 .inputSize {
   width: 150px;
   height: 45px;
