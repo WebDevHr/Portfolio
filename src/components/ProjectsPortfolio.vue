@@ -11,7 +11,7 @@
         </h5>
       </div>
       <div
-        class="d-flex flex-row justify-content-center justify-content-lg-start border-bottom pb-3"
+        class="d-flex flex-column justify-content-center align-items-center justify-content-lg-start border-bottom pb-3 flex-lg-row"
       >
         <button
           type="button"
@@ -27,7 +27,7 @@
           placeholder="Search projects"
         />
         <select
-          class="form-select selectWidth ms-auto"
+          class="form-select selectWidth ms-lg-auto mt-2 mt-lg-0"
           aria-label="Default select example"
           v-model="selectedOption"
         >
@@ -161,6 +161,7 @@ export default {
 }
 .selectWidth {
   width: 150px;
+  height: 45px;
 }
 #myInput {
   padding-top: 5px;
@@ -170,7 +171,7 @@ export default {
 }
 input,
 select {
-  transition: width 1s;
+  transition: width 0.5s;
 }
 input:focus,
 select:focus {

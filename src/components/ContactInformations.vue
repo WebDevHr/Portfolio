@@ -43,11 +43,15 @@ export default {};
 * {
   font-family: "Courgette", sans-serif;
 }
+.underlineStyle {
+  transition: text-decoration 0.5s;
+}
 .underlineStyle:hover {
   text-decoration: underline;
 }
 .color {
   color: rgb(151, 151, 151);
+  transition: color 0.3s;
 }
 .color:hover {
   color: rgb(49, 49, 49);

@@ -28,7 +28,7 @@
           <div
             v-for="(item, index) in navTabs"
             :key="index"
-            class="py-2 px-4 mx-2 my-0 fs-5 rounded item navItems floatNone cursorPointer fs-3"
+            class="py-2 px-4 mx-2 my-0 fs-3 rounded item navItems floatNone cursorPointer fw-bold"
             @click="goToRelated(item)"
           >
             {{ item }}
@@ -126,6 +126,8 @@ export default {
       if (this.$route.path != tempPath) {
         this.$router.push({ name: tempRoute });
       }
+      this.isActive = !this.isActive;
+      this.isClicked = !this.isClicked;
     },
   },
 };
@@ -171,7 +173,7 @@ export default {
   left: 0;
   position: absolute;
   transform: rotate(0deg);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   width: 100%;
   border-radius: 5px;
 }
@@ -182,6 +184,7 @@ export default {
 
 .navbar-burger span:nth-child(2) {
   top: 0.85rem;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar-burger span:nth-child(3) {
@@ -196,6 +199,7 @@ export default {
 
 .navbar-burger.is-active span:nth-child(2) {
   opacity: 0;
+  height: 0px;
 }
 
 .navbar-burger.is-active span:nth-child(3) {
@@ -211,7 +215,13 @@ export default {
   transition: opacity 1s ease-out;
 } */
 .navItems {
+  color: rgb(150, 150, 150);
   float: right;
+  transition: color 0.5s, box-shadow 0.5s;
+}
+.navItems:hover {
+  color: black;
+  box-shadow: 5px 5px 15px rgb(176, 176, 176);
 }
 .floatLeft {
   float: left;

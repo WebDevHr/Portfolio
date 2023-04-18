@@ -25,14 +25,16 @@ export default {
 }
 .iconStyle {
   background-color: rgb(245, 245, 245);
+  transition: background-color 0.5s;
 }
 .iconStyle:hover {
   background-color: rgb(230, 230, 230);
 }
 .linkClass {
   color: rgb(124, 124, 124);
+  transition: color 0.5s;
 }
 .linkClass:hover {
-  color: rgb(26, 26, 26);
+  color: rgb(14, 14, 14);
 }
 </style>
