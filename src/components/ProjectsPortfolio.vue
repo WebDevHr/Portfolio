@@ -15,7 +15,7 @@
       >
         <button
           type="button"
-          class="btn btn-outline-secondary me-1 d-none d-lg-inline inputBorder"
+          class="btn btn-outline-secondary me-1 d-none d-lg-inline inputBorder inputSearchIconSize"
         >
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </button>
@@ -180,7 +180,7 @@ select {
 input:focus,
 select:focus {
   outline: none;
-  box-shadow: none;
+  box-shadow: 2px 2px 10px rgb(153, 153, 153);
   width: 300px;
 }
 </style>
