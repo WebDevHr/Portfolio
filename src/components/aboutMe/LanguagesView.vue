@@ -1,15 +1,25 @@
 <template>
-  <div class="d-flex flex-column align-items-start my-5 mx-auto col-8">
-    <h1 class="text-start fontFamilyCourgette fw-bold mb-4">Languages</h1>
+  <div class="d-flex flex-column flex-wrap flex-lg-nowrap my-5 mx-auto col-8">
+    <h1
+      class="text-start fontFamilyCourgette fw-bold mb-4 align-self-center align-self-lg-start"
+    >
+      Languages
+    </h1>
     <div
-      class="d-flex flex-lg-row flex-column align-items-lg-center fontFamilyKalam ms-lg-4 my-2"
+      class="d-flex flex-lg-row flex-column fontFamilyKalam ms-lg-4 my-2"
       v-for="(language, index) in languages"
       :key="index"
     >
-      <div class="fs-3 fw-bold my-0 lanWidth text-start text-black">
+      <div
+        class="fs-3 fw-bold me-lg-4 lanWidth text-start text-black align-self-center align-self-lg-start my-auto"
+      >
         {{ language.lan }}
       </div>
-      <div class="fs-5 text-secondary text-start">{{ language.pro }}</div>
+      <div
+        class="fs-5 text-secondary align-self-center align-self-lg-start my-auto"
+      >
+        {{ language.pro }}
+      </div>
     </div>
   </div>
 </template>
@@ -29,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.lanWidth {
-  width: 150px;
+.xxx {
+  align-items: center;
 }
 </style>

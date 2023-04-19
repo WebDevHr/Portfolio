@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex flex-row my-5">
-    <div class="col-2 ms-auto d-flex justify-content-start">
+  <div class="d-flex flex-column flex-lg-row my-5 col-lg-8 mx-auto">
+    <div class="d-flex flex-lg-row fontFamilyKalam mx-auto mx-lg-0">
       <img
         src="@/assets/hossein.jpg"
         alt="Hossein"
@@ -9,9 +9,13 @@
         height="200px"
       />
     </div>
-    <div class="d-flex flex-column align-items-start me-auto col-6">
-      <h1 class="text-start fontFamilyCourgette fw-bold mb-4">Overview</h1>
-      <p class="fontFamilyKalam indent justify">
+    <div class="mt-3 ms-lg-5 d-flex flex-column align-items-center">
+      <h1
+        class="fontFamilyCourgette fw-bold mb-4 mt-3 mt-lg-0 align-self-lg-start"
+      >
+        Overview
+      </h1>
+      <p class="fontFamilyKalam indent justify col-lg-12 col-9">
         I am Hossein Razeghian, a computer engineering student at Gazi
         University in Ankara, Turkey. I am a front-end developer and have
         recently started to expand my knowledge in back-end development. I am

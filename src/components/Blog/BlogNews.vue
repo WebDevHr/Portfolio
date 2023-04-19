@@ -8,7 +8,7 @@
       <button
         v-for="(item, index) in carouselItems"
         :key="index"
-        :data-bs-target="'#' + carouselExampleCaptions"
+        data-bs-target="#carouselExampleCaptions"
         :data-bs-slide-to="index"
         :class="index === 0 ? 'active' : ''"
         aria-current="true"
