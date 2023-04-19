@@ -48,14 +48,14 @@ export default {
 /** Transitions **/
 .fade-enter {
   opacity: 0;
-  translate: -50px 0px;
+  translate: -30px 0px;
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 .fade-leave-to {
   opacity: 0;
-  translate: -50px 0px;
+  translate: -30px 0px;
 }
 </style>
