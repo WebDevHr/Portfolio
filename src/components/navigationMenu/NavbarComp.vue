@@ -69,7 +69,7 @@ gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 export default {
   data() {
     return {
-      navTabs: ["Projects", "Skills", "About me", "Contact"],
+      navTabs: ["Projects", "Skills", "About me", "Blog", "Contact"],
       isActive: false,
       isClicked: false,
       timeoutId: null,
@@ -209,13 +209,6 @@ export default {
   top: 0.85rem;
   left: 0;
 }
-
-/* .fade-enter {
-  opacity: 0;
-}
-.fade-enter-active {
-  transition: opacity 1s ease-out;
-} */
 .navItems {
   color: rgb(150, 150, 150);
   float: right;
@@ -243,14 +236,4 @@ export default {
   display: flex;
   justify-content: center;
 }
-
-/* .fade-enter-active,
-.fade-leave-active {
-  transition: all 1s ease;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-50px);
-} */
 </style>

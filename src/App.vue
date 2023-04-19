@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import NavbarComp from "./components/NavbarComp.vue";
+import NavbarComp from "./components/navigationMenu/NavbarComp.vue";
 import FollowLinks from "@/components/FollowLinks.vue";
 import FooterComp from "./components/FooterComp.vue";
 

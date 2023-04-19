@@ -9,13 +9,15 @@
       <h4 class="text-myGrey fontFamilyKalam">
         Front-end Developer who tends to be a Full-stack Developer
       </h4>
-      <button
-        type="button"
-        class="btn btn-outline-success btn-lg mt-4 shadow fontFamilyKalam"
+      <a :href="fileUrl" download
+        ><button
+          type="button"
+          class="btn btn-outline-success btn-lg mt-4 shadow fontFamilyKalam"
+        >
+          <font-awesome-icon icon="fa-solid fa-circle-down" />
+          <span class="mx-2">Download CV</span>
+        </button></a
       >
-        <font-awesome-icon icon="fa-solid fa-circle-down" />
-        <span class="mx-2">Download CV</span>
-      </button>
     </div>
     <div class="col-8">
       <img src="@/assets/pictures/developer.svg" alt="Developer" />
@@ -24,7 +26,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      fileUrl:
+        "https://public.am.files.1drv.com/y4mbiWJQ0q-DmSHa_MGJnEFE0fVN0wgCNz1z_dclOOC7Q7qN0brc_mOzvUn-cNwLall4yXFR6BSShzUfkKuw-TjMTz_T5zdNLkPvPKDCDdSE6nCiwtrAZekVFsTS1SjYKe2Zv2zxSeZbRDqAXjZrNMpOqEr24-XXh4K8p_JhhBTQ_VGdFcNsHDokMGh_2C0kTkqmiNe1_1-dcNKhFYd6Hxy2FpjFlUuLCL5J9puH4qmqQM?AVOverride=1",
+    };
+  },
+};
 </script>
 
 <style scoped>

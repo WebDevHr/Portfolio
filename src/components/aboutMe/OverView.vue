@@ -2,9 +2,9 @@
   <div class="d-flex flex-row my-5">
     <div class="col-2 ms-auto d-flex justify-content-start">
       <img
-        src="@/assets/me.jpg"
+        src="@/assets/hossein.jpg"
         alt="Hossein"
-        class="border rounded shadow cover"
+        class="border rounded-circle shadow cover"
         width="200px"
         height="200px"
       />
