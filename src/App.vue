@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <NavbarComp />
-    <router-view :key="$route.fullPath" />
+    <transition name="fade" mode="out-in">
+      <router-view :key="$route.fullPath" />
+    </transition>
+
     <FollowLinks />
     <FooterComp />
   </div>
@@ -40,5 +43,19 @@ export default {
 }
 .fontFamilyCourgette {
   font-family: "Courgette", sans-serif;
+}
+
+/** Transitions **/
+.fade-enter {
+  opacity: 0;
+  translate: -50px 0px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease-out;
+}
+.fade-leave-to {
+  opacity: 0;
+  translate: -50px 0px;
 }
 </style>

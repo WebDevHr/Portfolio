@@ -1,13 +1,13 @@
 <template>
   <div
-    class="my-5 col-lg-5 col-12 d-flex justify-content-center align-items-center"
+    class="my-5 col-lg-5 col-12 d-flex justify-content-center align-items-center fontFamilyCourgette"
   >
     <div class="col-12">
       <form class="border rounded p-4" @submit.prevent="">
         <div class="mb-3">
           <label
             for="exampleInputEmail1"
-            class="form-label d-flex justify-content-start ms-1"
+            class="form-label d-flex justify-content-start ms-1 fontFamilyKalam fw-bold"
             >Full Name</label
           >
           <input
@@ -25,7 +25,7 @@
         <div class="mb-3">
           <label
             for="exampleInputEmail1"
-            class="form-label d-flex justify-content-start ms-1"
+            class="form-label d-flex justify-content-start ms-1 fontFamilyKalam fw-bold"
             >Email address</label
           >
           <input
@@ -43,7 +43,7 @@
         <div class="mb-3">
           <label
             for="exampleInputPassword1"
-            class="form-label d-flex justify-content-start ms-1"
+            class="form-label d-flex justify-content-start ms-1 fontFamilyKalam fw-bold"
             >Subject</label
           >
           <input
@@ -57,7 +57,7 @@
         <div class="mb-3">
           <label
             for="exampleFormControlTextarea1"
-            class="form-label d-flex justify-content-start ms-1"
+            class="form-label d-flex justify-content-start ms-1 fontFamilyKalam fw-bold"
             >Message</label
           >
           <textarea
@@ -149,9 +149,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  font-family: "Courgette", sans-serif;
-}
 .modalSubmit {
   transition: background-color 0.5s;
 }

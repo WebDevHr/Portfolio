@@ -35,7 +35,7 @@ export default {
 }
 .titleColor {
   transition: all 0.5s;
-  color: grey;
+  color: rgb(200, 200, 200);
 }
 .skillcard:hover .titleColor {
   color: black;
