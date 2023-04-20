@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       fileUrl:
-        "https://public.am.files.1drv.com/y4mbiWJQ0q-DmSHa_MGJnEFE0fVN0wgCNz1z_dclOOC7Q7qN0brc_mOzvUn-cNwLall4yXFR6BSShzUfkKuw-TjMTz_T5zdNLkPvPKDCDdSE6nCiwtrAZekVFsTS1SjYKe2Zv2zxSeZbRDqAXjZrNMpOqEr24-XXh4K8p_JhhBTQ_VGdFcNsHDokMGh_2C0kTkqmiNe1_1-dcNKhFYd6Hxy2FpjFlUuLCL5J9puH4qmqQM?AVOverride=1",
+        "https://public.am.files.1drv.com/y4mjj1nlPz7Bk-VvpjabenSeiZmdNx6CTIpU9JmXFh-DHMRFB9h7ODYNgmwYGhTbXeHSjE8YWsQNP_v1gYpVKA6kXZXFxT9RJPRjqijIbDQ5EWWMIirAeL6MBGaiTCSMHwhCg4jGs3lNnMCdJgNnIc7oMxHVQEfjw4Lwnm3YNCS8TdyuL18ruGCamNezrVbI0Rn7wagL_g5-ffVGpQVXFGIkqnAxl3ew4vMG_vms1IFf4U?AVOverride=1",
     };
   },
 };
