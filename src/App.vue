@@ -13,7 +13,7 @@
 <script>
 import NavbarComp from "./components/navigationMenu/NavbarComp.vue";
 import FollowLinks from "@/components/follow/FollowLinks.vue";
-import FooterComp from "./components/FooterComp.vue";
+import FooterComp from "./components/footer.vue/FooterComp.vue";
 
 export default {
   name: "App",

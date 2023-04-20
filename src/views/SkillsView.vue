@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import SkillsCard from "@/components/SkillsCard.vue";
+import SkillsCard from "@/components/skills/SkillsCard.vue";
 export default {
   components: {
     SkillsCard,

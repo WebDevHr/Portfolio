@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import FirstPart from "@/components/FirstPart.vue";
+import FirstPart from "@/components/CVAndPic/FirstPart.vue";
 import ProjectsPortfolio from "@/components/ProjectPortfolioPart/ProjectsPortfolio.vue";
 export default {
   components: {
