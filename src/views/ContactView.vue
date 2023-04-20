@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import ContactForm from "@/components/ContactForm.vue";
-import ContactInformations from "@/components/ContactInformations.vue";
+import ContactForm from "@/components/contactPage/ContactForm.vue";
+import ContactInformations from "@/components/contactPage/ContactInformations.vue";
 
 export default {
   components: {

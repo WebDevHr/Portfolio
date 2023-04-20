@@ -12,7 +12,7 @@
 
 <script>
 import NavbarComp from "./components/navigationMenu/NavbarComp.vue";
-import FollowLinks from "@/components/FollowLinks.vue";
+import FollowLinks from "@/components/follow/FollowLinks.vue";
 import FooterComp from "./components/FooterComp.vue";
 
 export default {

@@ -7,7 +7,7 @@
 
 <script>
 import FirstPart from "@/components/FirstPart.vue";
-import ProjectsPortfolio from "@/components/ProjectsPortfolio.vue";
+import ProjectsPortfolio from "@/components/ProjectPortfolioPart/ProjectsPortfolio.vue";
 export default {
   components: {
     FirstPart,
