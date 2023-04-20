@@ -72,7 +72,7 @@ export default {
     const url = "http://eventregistry.org/api/v1/article/getArticles";
     const data = {
       action: "getArticles",
-      keyword: "Web development",
+      keyword: "javascript",
       articlesPage: 1,
       articlesCount: 3,
       articlesSortBy: "date",
