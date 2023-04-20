@@ -1,5 +1,5 @@
 <template>
-  <div class="my-5">
+  <div class="mb-5 border-top pt-5 container-lg">
     <div>
       <h1 class="fw-bolder mb-5">Follow me</h1>
     </div>

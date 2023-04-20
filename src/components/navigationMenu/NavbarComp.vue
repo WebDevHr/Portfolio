@@ -29,7 +29,7 @@
       <div
         v-for="(item, index) in navTabs"
         :key="index"
-        class="py-2 px-3 mx-2 my-0 fs-3 rounded item navItems cursorPointer fw-bold"
+        class="py-2 px-3 px-md-2 px-xl-3 mx-2 my-0 fs-3 rounded item navItems cursorPointer fw-bold"
         @click="goToRelated(item)"
       >
         {{ item }}

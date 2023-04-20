@@ -1,25 +1,43 @@
 <template>
-  <div class="my-5">
+  <div class="my-5 fontFamilyKalam">
     <div class="card mb-3 col-10 mx-auto">
       <div class="row g-0">
         <div class="col-md-4 bg-secondary">
           <img
-            src="@/assets/logo.png"
+            :src="require(`@/assets/pictures/${item.imgSrc}`)"
             class="img-fluid rounded-start"
-            alt="..."
+            :alt="item.title"
           />
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 ps-md-4">
           <div class="card-body">
-            <h5 class="card-title text-md-start">Card title</h5>
+            <h4 class="card-title text-md-start fontFamilyKalam fw-bolder">
+              {{ item.title }}
+            </h4>
+            <div class="d-flex fw-bold text-secondary mb-2">
+              <div class="fontFamilyKalam">By: {{ item.by }}</div>
+              <div class="ms-auto badgeWidth">
+                <font-awesome-icon :icon="['fas', 'heart']" class="me-1" />{{
+                  item.likes
+                }}
+              </div>
+              <div class="badgeWidth">
+                <font-awesome-icon :icon="['fas', 'comment']" class="me-1" />{{
+                  item.comments
+                }}
+              </div>
+            </div>
             <p class="card-text text-md-start">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              {{ item.description }}
             </p>
             <p class="card-text text-md-start">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted"
+                >Last updated {{ item.lastUpdate }} mins ago</small
+              >
             </p>
+            <div class="text-start ms-4">
+              <a href="" class="readMore">Read More >>></a>
+            </div>
           </div>
         </div>
       </div>
@@ -28,7 +46,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    item: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
-<style></style>
+<style scoped>
+.badgeWidth {
+  width: 50px;
+}
+.readMore {
+  color: rgb(180, 180, 180);
+  transition: all 0.3s;
+}
+.readMore:hover {
+  color: black;
+  font-weight: bold;
+}
+</style>

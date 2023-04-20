@@ -28,6 +28,8 @@ import {
   faChevronUp,
   faPhone,
   faLocationDot,
+  faHeart,
+  faComment,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -50,7 +52,9 @@ library.add(
   faLinkedinIn,
   faChevronUp,
   faPhone,
-  faLocationDot
+  faLocationDot,
+  faHeart,
+  faComment
 );
 
 /* add font awesome icon component */

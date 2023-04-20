@@ -47,6 +47,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+    <div class="overlay"></div>
   </div>
 </template>
 
@@ -106,5 +107,16 @@ export default {
 }
 img {
   height: 500px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* 20% transparency black overlay */
+}
+.posRelative {
+  position: relative;
 }
 </style>
