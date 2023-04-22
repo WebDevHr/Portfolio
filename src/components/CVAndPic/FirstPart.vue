@@ -29,8 +29,7 @@
 export default {
   data() {
     return {
-      fileUrl:
-        "https://public.am.files.1drv.com/y4mjj1nlPz7Bk-VvpjabenSeiZmdNx6CTIpU9JmXFh-DHMRFB9h7ODYNgmwYGhTbXeHSjE8YWsQNP_v1gYpVKA6kXZXFxT9RJPRjqijIbDQ5EWWMIirAeL6MBGaiTCSMHwhCg4jGs3lNnMCdJgNnIc7oMxHVQEfjw4Lwnm3YNCS8TdyuL18ruGCamNezrVbI0Rn7wagL_g5-ffVGpQVXFGIkqnAxl3ew4vMG_vms1IFf4U?AVOverride=1",
+      fileUrl: "https://1drv.ms/b/s!AnkELWSYXNGBeKC9OME-x6hWthk?e=VdmFRw",
     };
   },
 };
