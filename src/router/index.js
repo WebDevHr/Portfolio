@@ -55,4 +55,15 @@ const router = new VueRouter({
   },
 });
 
+router.beforeEach((to, from, next) => {
+  if (to.path === from.path) {
+    // if the target route is the same as the current route,
+    // prevent navigation and don't throw the NavigationDuplicated error
+    next(false);
+  } else {
+    // otherwise, allow navigation to proceed
+    next();
+  }
+});
+
 export default router;
