@@ -47,23 +47,11 @@ const router = new VueRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
-      console.log(savedPosition);
       return savedPosition;
     } else {
       return { x: 0, y: 0 };
     }
   },
-});
-
-router.beforeEach((to, from, next) => {
-  if (to.path === from.path) {
-    // if the target route is the same as the current route,
-    // prevent navigation and don't throw the NavigationDuplicated error
-    next(false);
-  } else {
-    // otherwise, allow navigation to proceed
-    next();
-  }
 });
 
 export default router;
